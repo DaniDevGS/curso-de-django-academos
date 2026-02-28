@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <main class="container py-5">
+        <section class="card card-body">
+            <h1 class="display-1 text-center">Django API Productos (DaniDevGS)</h1>
+            <p class="text-center">Una API REST construida con Django</p>
+
+            <div class="text-center">
+                <a class="btn btn-danger" href="/api/inventario/">
+                    /api/inventario/
+                </a>
+
+                <a class="btn btn-primary" href="/api/categoria/">
+                    /api/categoria/
+                </a>
+
+                <a class="btn btn-info" href="/admin/">
+                    Admin
+                </a>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}

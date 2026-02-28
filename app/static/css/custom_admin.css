@@ -1,0 +1,103 @@
+/* En tu static/css/custom_admin.css */
+
+/* Fuente de la web */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --unfold-font-family: 'Fira Code', 'Courier New', monospace !important;
+}
+
+/* Fondo similar a la web de Sofia */
+body {
+    background-color: #0f172a !important;
+    background-image: 
+        radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+        radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%) !important;
+    background-attachment: fixed !important;
+}
+
+/* Glassmorphism para las tarjetas de Unfold */
+.unfold-card, .bg-white, [class*="bg-gray-"], .unfold-sidebar {
+    background: rgba(15, 23, 42, 0.6) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Botones con el Glow Cyan de Sofia */
+.bg-primary-600 {
+    background-color: #06b6d4 !important;
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.4) !important;
+}
+
+/* Efecto Glassmorphism en las tarjetas del admin */
+.unfold-card, .unfold-sidebar {
+    background: rgba(30, 41, 59, 0.7) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+
+
+/* También puedes aplicar la fuente a elementos específicos del admin */
+body, .unfold-sidebar, .unfold-card, input, button, textarea {
+    font-family: 'Fira Code', 'Courier New', monospace !important;
+}
+
+/* Scrollbar personalizada como la de la web */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #1e293b; }
+::-webkit-scrollbar-thumb { background: #0ea5e9; border-radius: 5px; }
+
+/* custom_admin.css */
+.bg-primary-600 {
+    background-color: #10b981 !important;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.6) !important;
+}
+
+.bg-secondary-500 {
+    background-color: #0ea5e9 !important;
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.6) !important;
+}
+
+/* Botones con glow */
+button, .button, [type="submit"] {
+    transition: all 0.2s ease;
+}
+button:hover, .button:hover {
+    box-shadow: 0 0 20px currentColor;
+}
+
+/* Bordes de inputs con glow al focus */
+input:focus, textarea:focus, select:focus {
+    border-color: #0ea5e9 !important;
+    box-shadow: 0 0 10px #0ea5e9 !important;
+    outline: none !important;
+}
+
+/* custom_admin.css */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: 
+        repeating-linear-gradient(
+            0deg,
+            rgba(0, 255, 0, 0.03) 0px,
+            rgba(0, 255, 0, 0.03) 1px,
+            transparent 1px,
+            transparent 3px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(0, 255, 0, 0.02) 0px,
+            rgba(0, 255, 0, 0.02) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+    z-index: -1;
+}
